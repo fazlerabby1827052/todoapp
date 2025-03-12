@@ -44,8 +44,7 @@ function App() {
       <br />
       <div className="grid grid-cols-3 gap-2">
         {ta1?.map((e, i) => {
-          return (
-            <div key={i} className="card card-dash shadow-2xl bg-sky-300 w-96">
+          return <div key={i} className="card card-dash shadow-2xl bg-sky-300 w-96">
               <div className="card-body">
                 {e}
                 <button
@@ -62,7 +61,7 @@ function App() {
                 </button>
               </div>
             </div>
-          );
+          
         })}
       </div>
     </>
