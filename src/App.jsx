@@ -17,10 +17,11 @@ function App() {
     e.preventDefault();
     // const ar=JSON.parse(localStorage.getItem("tasks")) || [];
 
-    // setArr2([...ar,e.target.elements.addtodo.value]);
-
-    // localStorage.setItem("tasks",JSON.stringify(arr2));
-    setTa1([...ta1, e.target.elements.addtodo.value]);
+  const newTask = e.target.elements.addtodo.value.trim();
+  if (newTask) {
+    setTa1([...ta1, newTask]);
+  }
+  e.target.elements.addtodo.value = "";
     e.target.elements.addtodo.value = "";
   };
 
