@@ -39,7 +39,7 @@ function App() {
         <button type="submit">Add todo</button>
       </form>
       <br />
-      {/* <div className="grid grid-cols-3 gap-2">
+      <div className="grid grid-cols-3 gap-2">
         {ta1?.map((e, i) => (<div key={i} className="card card-dash shadow-2xl bg-sky-300 w-96">
               <div key={i} className="card-body">
                 {e}
@@ -59,7 +59,7 @@ function App() {
             </div>
           
         ))}
-      </div> */}
+      </div>
 
       
     </>
