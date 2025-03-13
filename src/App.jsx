@@ -5,33 +5,33 @@ import "./App.css";
 import Card from "./card/Card";
 
 function App() {
-  const arr = JSON.parse(localStorage.getItem("tasks")) || [];
+  // const arr = JSON.parse(localStorage.getItem("tasks")) || [];
 
-  // const [arr2,setArr2]=useState(arr);
+  // // const [arr2,setArr2]=useState(arr);
 
-  // const [ar2,setAr2]=useState([]);
+  // // const [ar2,setAr2]=useState([]);
 
-  const [ta1, setTa1] = useState(arr);
+  // const [ta1, setTa1] = useState(arr);
 
-  const handlesubmit = (e) => {
-    e.preventDefault();
-    // const ar=JSON.parse(localStorage.getItem("tasks")) || [];
+  // const handlesubmit = (e) => {
+  //   e.preventDefault();
+  //   // const ar=JSON.parse(localStorage.getItem("tasks")) || [];
 
-  const newTask = e.target.elements.addtodo.value.trim();
-  if (newTask) {
-    setTa1([...ta1, newTask]);
-  }
-  e.target.elements.addtodo.value = "";
-    e.target.elements.addtodo.value = "";
-  };
+  // const newTask = e.target.elements.addtodo.value.trim();
+  // if (newTask) {
+  //   setTa1([...ta1, newTask]);
+  // }
+  // e.target.elements.addtodo.value = "";
+  //   e.target.elements.addtodo.value = "";
+  // };
 
-  useEffect(() => {
-    localStorage.setItem("tasks", JSON.stringify(ta1));
-  }, [ta1]);
+  // useEffect(() => {
+  //   localStorage.setItem("tasks", JSON.stringify(ta1));
+  // }, [ta1]);
 
   return (
     <>
-      <form onSubmit={handlesubmit}>
+      {/* <form onSubmit={handlesubmit}>
         <input
           type="text"
           name="addtodo"
@@ -64,7 +64,9 @@ function App() {
             </div>
           
         ))}
-      </div>
+      </div> */}
+
+      <p>Working</p>
     </>
   );
 }
